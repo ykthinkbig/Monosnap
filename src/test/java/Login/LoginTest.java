@@ -21,12 +21,14 @@ public class LoginTest {
         driver.findElement(By.className("headButton")).click();
         driver.findElement(By.xpath("//input[@class='w-100 textInput in']")).sendKeys("ridwan.abdulazeez1@gmail.com");
         driver.findElement(By.xpath("//input[@class='w-100 textInput']")).sendKeys("Labibah1.");
-        driver.findElement(By.xpath("//button[@class='login']")).click();
-    }
+        driver.findElement(By.xpath("//button[@class='login']")).click(); 
+        Thread.sleep(7000);
+        driver.quit();
+        }
 
-    public static void main(String args[]) throws InterruptedException {
-        LoginTest test = new LoginTest();
-        test.setUp();
-    }
+        public static void main(String args[]) throws InterruptedException {
+            monosnapTests test = new monosnapTests();
+            test.setUp();
+        }
 
-}
+    }
